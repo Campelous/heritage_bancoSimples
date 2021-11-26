@@ -22,6 +22,15 @@ public class Program {
 		BusinessAccount acc4 = (BusinessAccount)acc2;
 		acc4.loan(400.0);
 		
+		if(acc3 instanceof BusinessAccount) {
+			BusinessAccount acc5 = (BusinessAccount)acc3;
+			acc5.loan(400.0);
+		}
+		if(acc3 instanceof SavingsAccount) {
+			SavingsAccount acc5 = (SavingsAccount)acc3;
+			acc5.updateBalance();
+			System.out.println("Update");
+		}
 	}
 
 }
